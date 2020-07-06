@@ -22,6 +22,17 @@
   (major1) == 4 && (major2) == 13 && (minor) <= 0)
 #endif /* MIN_VERSION_base */
 
+/* package parsec-3.1.14.0 */
+#ifndef VERSION_parsec
+#define VERSION_parsec "3.1.14.0"
+#endif /* VERSION_parsec */
+#ifndef MIN_VERSION_parsec
+#define MIN_VERSION_parsec(major1,major2,minor) (\
+  (major1) <  3 || \
+  (major1) == 3 && (major2) <  1 || \
+  (major1) == 3 && (major2) == 1 && (minor) <= 14)
+#endif /* MIN_VERSION_parsec */
+
 /* tool cpphs-1.20.9 */
 #ifndef TOOL_VERSION_cpphs
 #define TOOL_VERSION_cpphs "1.20.9"
@@ -133,10 +144,10 @@
 #endif /* MIN_TOOL_VERSION_runghc */
 
 #ifndef CURRENT_PACKAGE_KEY
-#define CURRENT_PACKAGE_KEY "oneaddress-vm-0.1.0.0-DVC28xuWXAn1emjZixtoLz"
+#define CURRENT_PACKAGE_KEY "oneaddress-vm-0.1.0.0-B7aTmmihhdxLcbncVN4ZIk"
 #endif /* CURRENT_PACKAGE_KEY */
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "oneaddress-vm-0.1.0.0-DVC28xuWXAn1emjZixtoLz"
+#define CURRENT_COMPONENT_ID "oneaddress-vm-0.1.0.0-B7aTmmihhdxLcbncVN4ZIk"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "0.1.0.0"

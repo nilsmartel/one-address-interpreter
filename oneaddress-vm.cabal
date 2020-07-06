@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f85070f1d10684439d89d115c6cd9bb270493237aa512bb732e59a6e51d73573
+-- hash: c4f1402073d1664353258647285541469cf03134a68cdff4fc80465905769f3f
 
 name:           oneaddress-vm
 version:        0.1.0.0
@@ -28,12 +28,14 @@ source-repository head
 library
   exposed-modules:
       Lib
+      Machine
   other-modules:
       Paths_oneaddress_vm
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , parsec >=3.1.14
   default-language: Haskell2010
 
 executable oneaddress-vm-exe
@@ -46,6 +48,7 @@ executable oneaddress-vm-exe
   build-depends:
       base >=4.7 && <5
     , oneaddress-vm
+    , parsec >=3.1.14
   default-language: Haskell2010
 
 test-suite oneaddress-vm-test
@@ -59,4 +62,5 @@ test-suite oneaddress-vm-test
   build-depends:
       base >=4.7 && <5
     , oneaddress-vm
+    , parsec >=3.1.14
   default-language: Haskell2010
